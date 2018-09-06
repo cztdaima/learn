@@ -1,0 +1,48 @@
+1. 错误，在java有小数点的默认为double，当需要float类型需进行强转
+
+2. 值传递 java没有指针，因此只有值传递，有一句老师常说java按值传递
+
+3 final是java中的关键字，当使用final说明不能被继承了
+
+4. error系统错误，程序编译时出现错误，exception是程序可以处理的异常，可捕捉且部分可恢复。
+
+5. final说明不能被继承了，finally是用于在处理异常时执行任何清除操作
+
+6.没有引用过的话，常量池创建一个，堆中创建一个；如果引用过了则直接从常量池拿引用 new一个在堆中
+
+7 按照java的基本数据数据类型转换规则，小的可转换为大的，大的转成小的需要强制转换，1位int型所以错误。
+
+8.数组没有这个方法，但有length这个属性来表示长度，String有length()这个方法，用来得到字符串的长度
+
+9 Overload指重载，方法名不变其余可变，关系为同一个类，同一份方法名不同方法参数或返回值
+Override重写，在子类中方法名称、参数个数，类型，顺序，返回值类型都是必须和父类方法一致的。它的关系是父子关系
+
+10含有abstract修饰符的class即为抽象类，而interface（接口）可以说是抽象类的特例，其所有方法必须为抽象的。两者区别为抽象类可以呀构造方法而接口没有构造方法，抽象类有普通成员变量，而接口没有，抽象类可包含非抽象的普通方法，而接口所有方法必须为抽象。一个类可以有多个接口但只能继承一个抽象类。
+
+11构造器Constructor不能被继承,因此不能被重写
+
+12 String类是final类而由第五题答案可知，String类不可以被继承
+
+13
+FatherClass Create
+FatherClass Create
+ChildClass Create
+
+
+14多线程有两种实现方法，一是继承Thread类，重写方法run()，二是实现Runnable接口，实现方法run()；同步有两种实现方法，分别是synchronized、wait与notify。
+
+15 wait与notify
+
+16  不能，一个对象的一个synchronized方法只能由一个线程访问。对象的synchronized方法不能进入了，但它的其他非synchronized方法还是可以访问的。
+
+17 C E 
+
+18 String是一个对象，也成为常量对象，其长度是固定的，不可更改，直至该对象被销毁而StringBuffer是长度可变的，所以其是可通过StringBuffer的方法进行更改的
+
+19 JAVA类要实现序列化，对应的类必须先实现Serializable和Externalizable这两种接口，然后调用ObjectOutputStream的witeObject（）方法来保存对象以及通过ObjeatInputStream的readObjeact（）方法来读取保存的对象。
+
+20 Comparable 接口和 Comparator 接口
+
+21 Collection是一个接口。它是一个高度抽象出来的集合，包含了集合的基本操作：添加、删除、清空、遍历、是否为空、获取大小等。Java Collection框架中包含了大量集合接口以及这些接口的实现类和操作他们的方法。主要提供了List、Queen、Set、Stack和Map。其中，List、Queen、Set、Stack都是继承Collection接口。
+
+
